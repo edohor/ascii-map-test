@@ -8,6 +8,9 @@ import InvalidMap2 from './invalid-map2.txt';
 import InvalidMap3 from './invalid-map3.txt';
 import InvalidMap4 from './invalid-map4.txt';
 import InvalidMap5 from './invalid-map5.txt';
+import InvalidMap6 from './invalid-map6.txt';
+import InvalidMap7 from './invalid-map7.txt';
+import InvalidMap8 from './invalid-map8.txt';
 
 export const getMaps = () => {
     return [
@@ -20,6 +23,9 @@ export const getMaps = () => {
     InvalidMap2,
     InvalidMap3,
     InvalidMap4,
-    InvalidMap5
+    InvalidMap5,
+    InvalidMap6,
+    InvalidMap7,
+    InvalidMap8
     ]
 }

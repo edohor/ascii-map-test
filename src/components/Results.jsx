@@ -37,7 +37,7 @@ export default function Results(props) {
             <div style={{marginBottom: '20px'}}>{result && result.letters}</div>
             <div style={{marginBottom: '5px'}}>All characters:</div>
             <div>{result && result.allChars}</div>
-            {result && result.error!=="" && <div>ERROR: {result.error}</div>}
+            {result && result.error!=="" && <div style={{marginTop: '20px'}}>ERROR: {result.error}</div>}
         </div>
     )
 }
