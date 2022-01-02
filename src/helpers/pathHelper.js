@@ -225,7 +225,7 @@ export const findNextCharacter = (layout, lastCharCoo, lastDirectionForwarded) =
             if (elementRight != undefined && regEx.test(elementRight[2]) && lastDirection !== 'left' && elementRight[2] !== ' ') {
                 // go right
                 if (elementCurrent[2] === '+' && lastDirection === 'right') {
-                    returnError("Fake turn");
+                    error = "Fake turn";
                 }
                 saveCharacters(elementRight, regExLetters);
                 nextCoordinates = [elementRight[0], elementRight[1]];
@@ -234,7 +234,7 @@ export const findNextCharacter = (layout, lastCharCoo, lastDirectionForwarded) =
             } else if (elementLeft != undefined && regEx.test(elementLeft[2]) && lastDirection !== 'right' && elementLeft[2] !== ' ') {
                 // go left
                 if (elementCurrent[2] === '+' && lastDirection === 'left') {
-                    returnError("Fake turn");
+                    error = "Fake turn";
                 }
                 saveCharacters(elementLeft, regExLetters);
                 nextCoordinates = [elementLeft[0], elementLeft[1]];
@@ -245,7 +245,7 @@ export const findNextCharacter = (layout, lastCharCoo, lastDirectionForwarded) =
             else if (elementDown != undefined && regEx.test(elementDown[2]) && lastDirection !== 'up' && elementDown[2] !== ' ') {
                 // go down
                 if (elementCurrent[2] === '+' && lastDirection === 'down') {
-                    returnError("Fake turn");
+                    error = "Fake turn";
                 }
                 saveCharacters(elementDown, regExLetters);
                 nextCoordinates = [elementDown[0], elementDown[1]];
@@ -254,7 +254,7 @@ export const findNextCharacter = (layout, lastCharCoo, lastDirectionForwarded) =
             } else if (elementUp != undefined && regEx.test(elementUp[2]) && lastDirection !== 'down' && elementUp[2] !== ' ') {
                 // go up
                 if (elementCurrent[2] === '+' && lastDirection === 'up') {
-                    returnError("Fake turn");
+                    error = "Fake turn";
                 }
                 saveCharacters(elementUp, regExLetters);
                 nextCoordinates = [elementUp[0], elementUp[1]];
