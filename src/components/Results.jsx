@@ -5,8 +5,6 @@ export default function Results(props) {
     const [selectedMap, setSelectedMap] = useState();
     const [resolvedMap, setResolvedMap] = useState();
     const [layout, setLayout] = useState();
-    const [letters, setLetters] = useState("");
-    const [allCharacters, setAllCharacters] = useState("");
     const [result, setResult] = useState();
 
     fetch(props.map)
